@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "isuru-corp"
     workspaces {
-      name = "simple-aws-env
+      name = "simple-aws-env"
     }
   }
   required_providers {

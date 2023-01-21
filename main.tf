@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "isuru-corp"
     workspaces {
-      name = "isuru-corp-ws1"
+      name = "simple-aws-env
     }
   }
   required_providers {
@@ -13,13 +13,4 @@ terraform {
   }
   required_version = ">= 1.2.0"
 }
-provider "aws" {
-  region = "ap-south-1"
-}
-resource "aws_instance" "app_server" {
-  ami           = "ami-0cca134ec43cf708f"
-  instance_type = "t2.micro"
-  tags = {
-    Name = "IsuruEd"
-  }
-}
+
